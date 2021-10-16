@@ -1,0 +1,472 @@
+/*!**************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/index.scss ***!
+  \**************************************************************************************************************/
+@media screen and (min-width: 1025px) {
+  .sidebar-container {
+    width: 240px; }
+  .company {
+    padding: 41px; }
+    .company-logo {
+      height: 50px;
+      width: 50px; }
+    .company-name {
+      padding-left: 10px;
+      align-self: center;
+      font-size: 16px; }
+  .closing-opening-sidebar-button {
+    display: none; }
+  .category .mark {
+    width: 3px;
+    height: 24px;
+    margin-right: 37px; }
+  .category .heading {
+    padding-left: 12px; } }
+
+@media screen and (min-width: 569px) and (max-width: 1025px) {
+  .sidebar {
+    position: absolute;
+    height: 100%; }
+    .sidebar .category .mark {
+      width: 3px;
+      height: 24px;
+      margin-right: 37px; }
+    .sidebar.open {
+      position: fixed;
+      z-index: 1;
+      height: 100%; }
+      .sidebar.open .sidebar-container {
+        width: 240px; }
+      .sidebar.open .company {
+        padding: 41px 0 47px 41px; }
+        .sidebar.open .company-logo {
+          height: 24px;
+          width: 24px; }
+        .sidebar.open .company-name {
+          padding-left: 5px;
+          align-self: center;
+          font-size: 16px; }
+      .sidebar.open .category .heading {
+        padding-left: 12px; }
+    .sidebar.closed .sidebar-container {
+      width: 104px; }
+    .sidebar.closed .company {
+      padding: 41px 0 47px 41px; }
+      .sidebar.closed .company-logo {
+        height: 24px;
+        width: 24px; }
+      .sidebar.closed .company-name {
+        display: none; }
+    .sidebar.closed .category .heading {
+      display: none; } }
+
+@media screen and (max-width: 569px) {
+  .sidebar {
+    height: 100%;
+    position: absolute; }
+    .sidebar .category .icon {
+      display: none; }
+    .sidebar.open {
+      position: fixed;
+      z-index: 1;
+      height: 100%; }
+      .sidebar.open .sidebar-container {
+        width: 192px; }
+      .sidebar.open .company {
+        padding: 40px 20px; }
+        .sidebar.open .company-logo {
+          height: 24px;
+          width: 24px; }
+        .sidebar.open .company-name {
+          padding-left: 5px;
+          align-self: center;
+          font-size: 16px; }
+      .sidebar.open .category .heading {
+        padding-left: 17px; }
+    .sidebar.closed .sidebar-container {
+      width: 12px; }
+    .sidebar.closed .company-logo, .sidebar.closed .company-name {
+      display: none; }
+    .sidebar.closed .category {
+      display: none; } }
+
+.sidebar {
+  display: flex; }
+  .sidebar.open .closing-opening-sidebar-button {
+    background: url(icons/sidebar/close-sidebar-button.svg) no-repeat; }
+  .sidebar.closed .closing-opening-sidebar-button {
+    background: url(icons/sidebar/open-sidebar-button.svg) no-repeat; }
+
+.closing-opening-sidebar-button {
+  width: 48px;
+  height: 106px;
+  border: none;
+  z-index: 1; }
+
+.sidebar-container {
+  background: #F3F4F9;
+  height: 100%; }
+
+.company {
+  display: flex; }
+  .company-logo {
+    background: url(icons/company-logo.svg);
+    background-size: contain; }
+  .company-name {
+    font-family: PoppinsNormal, sans-serif; }
+
+.category {
+  height: 64px;
+  display: flex; }
+  .category .mark,
+  .category .icon,
+  .category .heading {
+    align-self: center; }
+  .category.default.catalogue .icon {
+    background: url(icons/sidebar/catalogue-default.svg) no-repeat; }
+  .category.default.health .icon {
+    background: url(icons/sidebar/health-default.svg) no-repeat; }
+  .category.default.beauty .icon {
+    background: url(icons/sidebar/beauty-default.svg) no-repeat; }
+  .category.default.entertainment .icon {
+    background: url(icons/sidebar/entertainment-default.svg) no-repeat; }
+  .category.default.car .icon {
+    background: url(icons/sidebar/car-default.svg) no-repeat; }
+  .category.active.catalogue .icon {
+    background: url(icons/sidebar/catalogue-active.svg) no-repeat; }
+  .category.active.health .icon {
+    background: url(icons/sidebar/health-active.svg) no-repeat; }
+  .category.active.beauty .icon {
+    background: url(icons/sidebar/beauty-active.svg) no-repeat; }
+  .category.active.entertainment .icon {
+    background: url(icons/sidebar/entertainment-active.svg) no-repeat; }
+  .category.active.car .icon {
+    background: url(icons/sidebar/car-active.svg) no-repeat; }
+  .category.active .mark {
+    background: #34ABE0; }
+  .category.active .heading {
+    color: #34ABE0; }
+  .category .icon {
+    width: 24px;
+    height: 24px; }
+  .category .heading {
+    font-size: 16px;
+    font-family: OpenSansNormal, sans-serif; }
+
+@media screen and (max-width: 1025px) {
+  .main-content {
+    position: relative;
+    left: -48px;
+    margin-right: -48px; } }
+
+@media screen and (min-width: 569px) and (max-width: 1025px) {
+  .main-content {
+    padding-left: calc(104px + 48px); } }
+
+@media screen and (max-width: 569px) {
+  .main-content {
+    padding-left: calc(12px + 48px); } }
+
+.main-content {
+  width: 100%; }
+  .main-content .hr-line {
+    padding: 0;
+    height: 0;
+    border: none;
+    border-top: 1px solid #E5E5E5;
+    margin: 0; }
+
+@media screen and (min-width: 1025px) {
+  .header {
+    margin-bottom: 40px;
+    padding: 0 60px; }
+  .headline {
+    justify-content: flex-start;
+    height: 109px;
+    font-size: 28px; }
+  .search-container .search-input {
+    font-size: 18px; } }
+
+@media screen and (min-width: 569px) and (max-width: 1025px) {
+  .header {
+    margin-bottom: 27px;
+    padding-right: 26px; }
+    .header .search-container .search-input {
+      font-size: 18px; }
+    .header .headline {
+      height: 102px;
+      justify-content: flex-end;
+      font-size: 28px; }
+    .header .search-container {
+      padding-left: 26px; }
+    .header.scrolled-down {
+      padding-top: 27px; }
+      .header.scrolled-down .headline {
+        display: none; }
+      .header.scrolled-down .search-container {
+        padding-left: 71px; } }
+
+@media screen and (max-width: 569px) {
+  .header {
+    margin-bottom: 27px;
+    padding-right: 20px; }
+    .header .search-container {
+      margin-left: 20px; }
+      .header .search-container .search-input {
+        font-size: 14px; }
+    .header .headline {
+      height: 90px;
+      justify-content: flex-end;
+      font-size: 24px; }
+      .header .headline .text {
+        padding-top: 16px; }
+      .header .headline .search-container {
+        padding-left: 20px; }
+    .header.scrolled-down {
+      padding-top: 27px; }
+      .header.scrolled-down .headline {
+        display: none; }
+      .header.scrolled-down .search-container {
+        padding-left: 68px; }
+        .header.scrolled-down .search-container .search-input.icon-search {
+          background: none;
+          padding-left: 16px; } }
+
+.headline {
+  display: flex;
+  align-items: center; }
+  .headline .text {
+    font-family: OpenSansNormal; }
+
+.search-container .search-input {
+  height: 52px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #33333314;
+  box-sizing: border-box;
+  border-radius: 50px;
+  padding-left: 16px; }
+  .search-container .search-input.icon-search {
+    background: url(icons/header/search.svg) no-repeat;
+    background-position: 16px;
+    padding-left: 44px; }
+
+.search-input::placeholder {
+  color: #0000002d; }
+
+@media screen and (min-width: 1025px) {
+  .coupons-container {
+    padding: 20px 60px 40px 40px;
+    height: calc(100vh - 52px - 109px - 40px*2); } }
+
+@media screen and (min-width: 569px) and (max-width: 1025px) {
+  .coupons-container {
+    padding: 7px 26px 27px 6px;
+    height: calc(100vh - 52px - 102px - 27px*3); }
+    .coupons-container.scrolled-down {
+      height: calc(100vh - 52px - 27px*3); } }
+
+@media screen and (max-width: 569px) {
+  .coupons-container {
+    padding: 12px 20px 27px 5px;
+    height: calc(100vh - 52px - 90px - 27px*3); }
+    .coupons-container.scrolled-down {
+      height: calc(100vh - 52px - 27px*3); } }
+
+.coupons-container {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto; }
+
+@media screen and (min-width: 1025px) {
+  .coupon {
+    width: 346px;
+    height: 161px;
+    padding: 20px 0 0 20px; }
+    .coupon .shadow {
+      width: calc(100% + 7px);
+      height: calc(100% + 9px);
+      left: -4px;
+      top: -3px; }
+    .coupon .content {
+      top: calc(-161px - 9px); }
+    .coupon .frame {
+      top: calc(2 * -161px - 9px); }
+    .coupon .content,
+    .coupon .frame {
+      height: 100%; } }
+
+@media screen and (min-width: 569px) and (max-width: 1025px) {
+  .coupon {
+    width: 296px;
+    height: 144px;
+    padding: 20px 0 0 20px; }
+    .coupon .shadow {
+      width: calc(100% + 8px);
+      height: calc(100% + 12px);
+      left: -4px;
+      top: -2px; }
+    .coupon .content {
+      top: calc(-144px - 12px); }
+    .coupon .frame {
+      top: calc(2 * -144px - 12px / 2); }
+    .coupon .content,
+    .coupon .frame {
+      height: calc(100% - 6px); } }
+
+@media screen and (max-width: 569px) {
+  .coupon {
+    width: 268px;
+    height: 130px;
+    padding: 15px 0 0 15px; }
+    .coupon .shadow {
+      width: calc(100% + 7px);
+      height: calc(100% + 13px);
+      left: -4px;
+      top: -2px; }
+    .coupon .content {
+      top: calc(-130px - 13px); }
+    .coupon .frame {
+      top: calc(2 * -130px - 13px / 2); }
+    .coupon .content,
+    .coupon .frame {
+      height: calc(100% - 6px); } }
+
+.coupon {
+  margin-left: auto;
+  margin-right: auto; }
+  .coupon .content,
+  .coupon .frame {
+    width: 100%; }
+  .coupon .content {
+    display: flex; }
+  .coupon .shadow {
+    background: url(images/coupon-bcgnds/coupon-default-bcgnd-shadow.png) no-repeat; }
+  .coupon .content {
+    background: url(images/coupon-bcgnds/coupon-default-bcgnd.png) no-repeat; }
+  .coupon .frame {
+    background: url(images/coupon-bcgnds/coupon-active-frame.svg) no-repeat; }
+  .coupon .shadow,
+  .coupon .content,
+  .coupon .frame {
+    background-size: contain;
+    position: relative; }
+  .coupon.default .frame {
+    display: none; }
+
+@media screen and (min-width: 1025px) {
+  .coupon .content .information {
+    padding: 16px 0 16px 20px; }
+    .coupon .content .information .coupon-name .title,
+    .coupon .content .information .coupon-name .description {
+      font-size: 16px; }
+    .coupon .content .information .bonus-type .data {
+      font-size: 36px; }
+    .coupon .content .information .bonus-type .essence {
+      font-size: 16px; } }
+
+@media screen and (min-width: 569px) and (max-width: 1025px) {
+  .coupon .content .information {
+    padding: 15px 0 15px 18px; }
+    .coupon .content .information .coupon-name .title,
+    .coupon .content .information .coupon-name .description {
+      font-size: 14px; }
+    .coupon .content .information .bonus-type .data {
+      font-size: 36px; }
+    .coupon .content .information .bonus-type .essence {
+      font-size: 16px; } }
+
+@media screen and (max-width: 569px) {
+  .coupon .content .information {
+    padding: 16px 0 16px 20px; }
+    .coupon .content .information .coupon-name .title,
+    .coupon .content .information .coupon-name .description {
+      font-size: 12px; }
+    .coupon .content .information .bonus-type .data {
+      font-size: 28px; }
+    .coupon .content .information .bonus-type .essence {
+      font-size: 12px; } }
+
+.coupon .content .information {
+  width: 62%;
+  box-sizing: border-box; }
+  .coupon .content .information .coupon-name .title {
+    font-family: RobotoBold, sans-serif;
+    letter-spacing: 0.1em; }
+  .coupon .content .information .coupon-name .description {
+    font-family: RobotoRegular, sans-serif;
+    opacity: 0.5; }
+  .coupon .content .information .bonus-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+    .coupon .content .information .bonus-type .data {
+      font-family: RobotoMedium, sans-serif;
+      color: #DF212D; }
+    .coupon .content .information .bonus-type .essence {
+      font-family: RobotoRegular, sans-serif;
+      letter-spacing: 0.4em;
+      opacity: 0.5; }
+  .coupon .content .information .coupon-name .title,
+  .coupon .content .information .bonus-type {
+    text-transform: uppercase; }
+  .coupon .content .information .coupon-name,
+  .coupon .content .information .bonus-type {
+    height: 50%; }
+
+.coupon .content .picture {
+  width: 38%; }
+  .coupon .content .picture.wine {
+    background: url(images/coupons-pictures/wine.png) no-repeat; }
+  .coupon .content .picture.beer {
+    background: url(images/coupons-pictures/beer.png) no-repeat; }
+  .coupon .content .picture.cake {
+    background: url(images/coupons-pictures/cake.png) no-repeat; }
+  .coupon .content .picture.sushi {
+    background: url(images/coupons-pictures/sushi.png) no-repeat; }
+  .coupon .content .picture.fruit {
+    background: url(images/coupons-pictures/fruit.png) no-repeat; }
+  .coupon .content .picture.stake {
+    background: url(images/coupons-pictures/stake.png) no-repeat; }
+  .coupon .content .picture.shawarma {
+    background: url(images/coupons-pictures/shawarma.png) no-repeat; }
+  .coupon .content .picture.ice-cream {
+    background: url("images/coupons-pictures/ice cream.png") no-repeat; }
+  .coupon .content .picture.wine, .coupon .content .picture.beer, .coupon .content .picture.cake, .coupon .content .picture.sushi, .coupon .content .picture.fruit, .coupon .content .picture.stake, .coupon .content .picture.shawarma, .coupon .content .picture.ice-cream {
+    background-size: contain; }
+
+.coupon .content .picture {
+  height: 100%; }
+
+@font-face {
+  font-family: PoppinsNormal;
+  src: url(fonts/Poppins/Poppins-Medium.ttf); }
+
+@font-face {
+  font-family: OpenSansNormal;
+  src: url(fonts/OpenSans/OpenSans-Regular.ttf); }
+
+@font-face {
+  font-family: RobotoMedium;
+  src: url(fonts/Roboto/Roboto-Medium.ttf); }
+
+@font-face {
+  font-family: RobotoRegular;
+  src: url(fonts/Roboto/Roboto-Regular.ttf); }
+
+@font-face {
+  font-family: RobotoBold;
+  src: url(fonts/Roboto/Roboto-Bold.ttf); }
+
+::-webkit-scrollbar {
+  display: none; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  display: flex;
+  min-width: 305px; }
+
+
+/*# sourceMappingURL=main.css.map*/
